@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add 2 Numbers</title>
+    <style>
+body{
+   
+  background-color: black;
+  position: relative;
+
+}
+h1{
+    color: white;
+}
+#root{
+    border: 4px solid teal;
+    box-shadow:4px 4px 18px rgb(79, 103, 103);
+    position: absolute;
+    background-color: rgb(80, 76, 76);
+   
+    text-align: center;
+    top:180px;
+    left:470px;
+    height: 350px;
+    width: 500px;
+    
+}
+
+ #root2{
+  display: flex;
+  flex-direction: column;
+ text-align: center;
+ width:300px;
+ justify-content: center;
+ margin-left: 100px;
+ row-gap: 30px;
+ line-height: 20px;
+ margin-top: 40px;
+  
+ }
+
+input{
+    border:2px solid rgb(73, 73, 182);
+    padding: 4px;
+    
+}
+
+button{
+    background-color: rgb(44, 84, 84);
+    color: white;
+    padding: 3px;
+    width: 100px;
+}
+
+
+    </style>
+</head>
+<body>
+    <div id="root">
+        <h1>Add 2 Numbers</h1>
+        <div id="root2">
+            <input  id="number1" type="number" placeholder="Enter 1 Number">
+            <input  id="number2" type="number" placeholder="Enter 2 Number">
+            <div id="result">
+                <button id="submit">Submit</button>
+                <h2>Ans</h2>
+                
+              
+
+            </div>
+
+            
+
+
+
+        </div>
+
+
+
+    </div>
+
+    <script>
+// const input1=document.getElementById('number1');
+// const num1=Number(input1.value);
+// const input2=document.getElementById('number2');
+// const num2=Number(input2.value);
+
+
+const button=document.getElementById('result');
+const re=button.addEventListener('click',()=>{
+    const h2=document.querySelector('h2');
+    const input1=document.getElementById('number1');
+const num1=Number(input1.value);
+const input2=document.getElementById('number2');
+const num2=Number(input2.value);
+
+
+    const result=num1+num2;
+   h2.textContent="result: "+result;
+
+
+
+})
+
+
+
+    </script>
+</body>
+</html>
